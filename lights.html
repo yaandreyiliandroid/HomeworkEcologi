@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <title>Расчет энергоэффективности умного дома</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__text">
+      <h1>Расчитай энергоэффективность своего дома!</h1>
+      <p>Реши проблему излишнего электропотребления самостоятельно!</p>
+    </div>
+  </header>
+  <main>
+    {% block content %}
+    <h2 class="main__title">Выбери освещение:</h2>
+    <ul class="list" id="list">
+      <li class="list__item">
+        <a href="{{size + "/3" }}">
+          <img class="item__img" src="../static/img/light.svg" alt="light">
+          <span>2-4 лампочки</span></a>
+      </li>
+      <!--Задание №2 -->
+      <li class="list__item">
+        <a href="{{size + "/5" }}"> 
+          <img class="item__img" src="../static/img/light.svg" alt="light">
+          <span>4-6 лампочек</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{size + "/10" }}">
+          <img class="item__img" src="../static/img/light.svg" alt="light">
+          <span>8 и более</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{size + "/10" }}">
+          <img class="item__img" src="https://yandex.ru/images/search?img_url=https%3A%2F%2Fsun9-12.userapi.com%2Fimpg%2FWrVdvGiDwLLOT7K9_bkIPi0yIs9IzjwnYW0-4w%2FXsBtrMpxeeE.jpg%3Fsize%3D1440x1440%26quality%3D95%26sign%3D784c134b4f505497b0644c9bded06977%26c_uniq_tag%3DMeWVVcjY02VRfGYQyC232byMLgyWHnVMqXX3PFqVAvo%26type%3Dalbum&lr=213&pos=1&rpt=simage&source=serp&text=%D0%B7%D0%B5%D0%BB%D1%91%D0%BD%D0%B0%D1%8F%20%D0%BB%D0%B0%D0%BC%D0%BF%D0%BE%D1%87%D0%BA%D0%B0%20%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0">
+          <span>наша экологичная сборка</span></a>
+        </li>
+      </ul>
+    {% endblock %}
+    </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
